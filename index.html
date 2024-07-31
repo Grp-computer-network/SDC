@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDC-info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1>
+            SDC Representatives and dept information
+        </h1>
+    </center>
+     
+    <center>
+    <button id="toggleButton">
+        BCA
+    </button>
+</center>
+    <ul id="myList">
+        <p>HOD : Somasundram</p>
+        <p>Representatives</p>
+        <li>1yr-Ranjani S <br>ph-6382738255</li>
+        <li>2yr-Mohammed kaja maidheen I <br> ph-9551096441</li>
+        <li>3yr-Krithick nagarjun B S <br> 9360554541</li>
+    </ul>
+
+    <script>
+        document.getElementById("toggleButton").addEventListener("click", function() {
+            var list = document.getElementById("myList");
+            if (list.style.display === "none") {
+                list.style.display = "block";
+                this.textContent = "BCA";
+            } else {
+                list.style.display = "none";
+                this.textContent = "BCA";
+            }
+        });
+    </script>
+</body>
+</html>
